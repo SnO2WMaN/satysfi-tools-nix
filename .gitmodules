@@ -1,3 +1,6 @@
 [submodule "satysfi-language-server"]
 	path = satysfi-language-server
 	url = https://github.com/SnO2WMaN/satysfi-language-server
+[submodule "satysfi-formatter"]
+	path = satysfi-formatter
+	url = https://github.com/SnO2WMaN/satysfi-formatter
