@@ -1,0 +1,7 @@
+[devshell]
+name = "satysfi-nix"
+packages = ["nixpkgs-fmt", "taplo-cli"]
+
+[[commands]]
+package = "treefmt"
+category = "formatter"
