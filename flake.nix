@@ -17,7 +17,7 @@
   outputs =
     { self, nixpkgs, flake-utils, devshell, ... } @ inputs:
     {
-      overlays.default = = import ./overlay.nix;
+      overlays.default = import ./overlay.nix;
       overlay = overlays.default;
     } //
     flake-utils.lib.eachDefaultSystem (system: rec {
