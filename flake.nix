@@ -20,7 +20,16 @@
       overlays.default = import ./overlay.nix;
       overlay = overlays.default;
     } //
-    flake-utils.lib.eachDefaultSystem (system: rec {
+    flake-utils.lib.eachDefaultSystem (system:
+    let
+      pkgs = import nixpkgs {
+        inherit system;
+        overlays = [
+          devshell.overlay
+        ];
+      };
+    in
+    {
       # `nix develop`
       devShell = pkgs.devshell.mkShell {
         imports = [
