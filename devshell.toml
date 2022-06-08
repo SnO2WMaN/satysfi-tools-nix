@@ -1,6 +1,6 @@
 [devshell]
 name = "satysfi-nix"
-packages = ["nixpkgs-fmt", "taplo-cli"]
+packages = ["alejandra", "dprint"]
 
 [[commands]]
 package = "treefmt"

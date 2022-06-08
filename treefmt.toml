@@ -1,9 +1,8 @@
-[formatter.nix]
-command = "nixpkgs-fmt"
+[formatter.alejandra]
+command = "alejandra"
 includes = ["*.nix"]
 
-
-[formatter.toml]
-command = "taplo"
-options = ["format"]
-includes = ["*.toml"]
+[formatter.dprint]
+command = "dprint"
+options = ["fmt"]
+includes = ["*.json", "*.toml", "*.md"]
