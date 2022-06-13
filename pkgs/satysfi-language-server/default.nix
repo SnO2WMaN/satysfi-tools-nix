@@ -3,17 +3,16 @@
   stdenv,
   fetchFromGitHub,
   rustPlatform,
+  locked,
   ...
 }:
 rustPlatform.buildRustPackage rec {
   pname = "satysfi-language-server";
-  version = "c48b59c248b5e4deb6dc9cd6a2a0df27af53bbce";
+  version = src.rev;
 
   src = fetchFromGitHub {
-    owner = "monaqa";
-    repo = "satysfi-language-server";
-    rev = version;
-    sha256 = "SkMP33VOKMDgCuxWWZhsITUpwZo13NPDRO0nuHYIBN8=";
+    inherit (locked) owner repo rev;
+    sha256 = locked.narHash;
   };
 
   cargoSha256 = "sha256-OJFdVTHq9eoXBVfm+XQKl3uEcv8bXFEw/7CQQhv/YlE=";

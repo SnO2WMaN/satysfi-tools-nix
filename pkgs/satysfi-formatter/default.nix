@@ -3,20 +3,19 @@
   stdenv,
   fetchFromGitHub,
   rustPlatform,
+  locked,
   ...
 }:
 rustPlatform.buildRustPackage rec {
   pname = "satysfi-formatter";
-  version = "v0.1.1";
+  version = src.rev;
 
   src = fetchFromGitHub {
-    owner = "usagrada";
-    repo = "satysfi-formatter";
-    rev = version;
-    sha256 = "sha256-kuGJ61UzmDDaV7GfPIelk7GOO6HSYidcNX+wrO2fSW4=";
+    inherit (locked) owner repo rev;
+    sha256 = locked.narHash;
   };
 
-  cargoSha256 = "sha256-IhmddT0wLZCVj6/RVoi0OXayoexHj57gs9lJoKBNmG4=";
+  cargoSha256 = "sha256-+8aVSqORYJpnZRNE9bleSmLORk+JWEvSgbiN4Sz7YAc=";
 
   doCheck = false;
 

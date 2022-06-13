@@ -8,6 +8,14 @@
       url = "github:edolstra/flake-compat";
       flake = false;
     };
+    satysfi-formatter = {
+      url = "github:usagrada/satysfi-formatter/v0.1.1";
+      flake = false;
+    };
+    satysfi-language-server = {
+      url = "github:monaqa/satysfi-language-server";
+      flake = false;
+    };
   };
   outputs = {
     self,

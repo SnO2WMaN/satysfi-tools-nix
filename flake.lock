@@ -102,7 +102,42 @@
         "devshell": "devshell",
         "flake-compat": "flake-compat",
         "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_2",
+        "satysfi-formatter": "satysfi-formatter",
+        "satysfi-language-server": "satysfi-language-server"
+      }
+    },
+    "satysfi-formatter": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653366227,
+        "narHash": "sha256-kuGJ61UzmDDaV7GfPIelk7GOO6HSYidcNX+wrO2fSW4=",
+        "owner": "usagrada",
+        "repo": "satysfi-formatter",
+        "rev": "6d9518575b1a3655bd227be407cfd6092889aaf9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "usagrada",
+        "ref": "v0.1.1",
+        "repo": "satysfi-formatter",
+        "type": "github"
+      }
+    },
+    "satysfi-language-server": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650032658,
+        "narHash": "sha256-SkMP33VOKMDgCuxWWZhsITUpwZo13NPDRO0nuHYIBN8=",
+        "owner": "monaqa",
+        "repo": "satysfi-language-server",
+        "rev": "c48b59c248b5e4deb6dc9cd6a2a0df27af53bbce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "monaqa",
+        "repo": "satysfi-language-server",
+        "type": "github"
       }
     }
   },
