@@ -31,14 +31,22 @@
     // flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {
         inherit system;
-        overlays = [devshell.overlay];
+        overlays = [
+          devshell.overlay
+          self.overlay
+        ];
       };
     in {
+      packages.satysfi-formatter = pkgs.satysfi-formatter;
+      packages.satysfi-language-server = pkgs.satysfi-language-server;
+
       # `nix develop`
       devShell = pkgs.devshell.mkShell {
         imports = [
           (pkgs.devshell.importTOML ./devshell.toml)
         ];
       };
+
+      checks = self.packages.${system};
     });
 }
