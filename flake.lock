@@ -110,16 +110,15 @@
     "satysfi-formatter": {
       "flake": false,
       "locked": {
-        "lastModified": 1653366227,
-        "narHash": "sha256-kuGJ61UzmDDaV7GfPIelk7GOO6HSYidcNX+wrO2fSW4=",
+        "lastModified": 1654866702,
+        "narHash": "sha256-HLw6WRdyavFWzF6mdJy2TKxZ/I4C9LNu/912pR+BS0w=",
         "owner": "usagrada",
         "repo": "satysfi-formatter",
-        "rev": "6d9518575b1a3655bd227be407cfd6092889aaf9",
+        "rev": "613e3aa8c776b95ef3108d92d15d3ef9a2e53ad0",
         "type": "github"
       },
       "original": {
         "owner": "usagrada",
-        "ref": "v0.1.1",
         "repo": "satysfi-formatter",
         "type": "github"
       }

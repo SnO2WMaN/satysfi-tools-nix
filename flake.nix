@@ -9,7 +9,7 @@
       flake = false;
     };
     satysfi-formatter = {
-      url = "github:usagrada/satysfi-formatter/v0.1.1";
+      url = "github:usagrada/satysfi-formatter";
       flake = false;
     };
     satysfi-language-server = {
