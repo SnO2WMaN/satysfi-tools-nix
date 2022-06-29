@@ -6,7 +6,7 @@
       "languages": [
         "toml",
         "nix",
-        "md",
+        "markdown",
         "json",
         "jsonc"
       ]
@@ -24,7 +24,12 @@
   "[jsonc]": {
     "editor.defaultFormatter": "jkillian.custom-local-formatters"
   },
-  "[md]": {
+  "[markdown]": {
     "editor.defaultFormatter": "jkillian.custom-local-formatters"
+  },
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-workflow.json": [
+      ".github/workflows/*.yml"
+    ]
   }
 }
