@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage rec {
     sha256 = locked.narHash;
   };
 
-  cargoSha256 = "sha256-3s3gpuoxEZS/o7Nyltf7xiRTk6+rKcGZl2yuwhZt2T0=";
+  cargoSha256 = "sha256-xVfpKDKAhZUBB5MR3yFe28oyAkxp2du7xA10rBuZVJY=";
 
   doCheck = false;
 
